@@ -1,0 +1,20 @@
+﻿<Project Sdk="MSTest.Sdk/3.3.1">
+  <PropertyGroup>
+    <UserSecretsId>92357150-dc07-4dae-a553-8ae8a9090c3e</UserSecretsId>
+    <src>../$(src)</src>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="$(src)/FunctionFilters/Identity/_.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" />
+    <PackageReference Include="Microsoft.Extensions.Http.Resilience" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.OpenAI" />
+  </ItemGroup>
+</Project>
